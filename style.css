@@ -137,13 +137,13 @@ li {
 nav li a{
     margin-top: 5px;
     color: rgb(255, 255, 255);
-    margin-left: 10px;
+    margin-left: 0px;
     
     }
   
   
 .nav {
-    display: inline-flex;
+    display: flex;
     padding-left: ; /* ------------- moves navigation list to right*/
   
 }
