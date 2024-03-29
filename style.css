@@ -122,9 +122,10 @@ h2{
 
 .container
 {
+    padding-top: 15px;
     text-align: center;
-    width: 350px;
-    border: solid red 2px;
+    width: 50%;
+    
   
 }
 
@@ -136,6 +137,7 @@ h2{
     font-size: 20px;
     height: 12px;
     padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
  
  
 }  
