@@ -99,7 +99,7 @@ input, select {
 
 body{
     
-    background: url() repeat;
+    background: url(img/background.jpg) repeat 0 0;
     min-height: 100%;
     display: block;
     background-size: cover;
