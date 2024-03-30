@@ -98,7 +98,10 @@ input, select {
 /*----------------------------------------------------------my code----------------------------------------------*/ 
 
 body{
-    background-color: rgb(0, 154, 68);
+    
+    background: url() repeat;
+    min-height: 100%;
+    display: block;
     background-size: cover;
     background-attachment: fixed;
 }
