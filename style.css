@@ -245,7 +245,7 @@ footer{
 
 .end{
     width: 60%;
-    height: 1000px;
+    height: 100vh;
     border: 2px solid black;
     background-color: rgba(255, 255, 255, 0.345);
 }
@@ -257,7 +257,8 @@ footer{
 
 .teamtable{
     width: 60%;
-    height: 1000px;
+    height: 100vh;
+    bottom: 0;
     border: 2px solid black;
     background-color: rgba(255, 255, 255, 0.345);
 }
