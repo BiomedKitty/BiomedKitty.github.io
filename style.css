@@ -222,7 +222,8 @@ td{
 
 .poster img{
 
-    height: 650px;
+    height: 50%;
+    width: 80%;
     border: 10px solid black;
     border-radius: 10px;
     
