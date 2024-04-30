@@ -219,6 +219,7 @@ tr{
 
 
 #topbar nav{
+    position:fixed;
     height:50px;
     width: 100%;
     background-color: #000000;
