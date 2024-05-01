@@ -114,12 +114,66 @@ a{
     text-decoration: none;
 }
 
-h3{
+h2{
+    font-size: 3vh;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
-    text-align: center;
-    
+    color: #000;
 }
+
+h2::after
+{
+    content: attr(data-tooltip);
+    top: -20vh;
+    left: 40vw;
+    position:absolute;
+    font-size: 3vh;  
+    color:#000;
+    text-shadow: none;
+    line-height: 10vh;
+    background: rgb(255, 255, 255);
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    clip-path:circle(0rem at center);
+    overflow: hidden;
+    transition: 700ms all ease-in;
+    height: 50vh;
+    width: 50vh;
+    text-align:left;
+    box-shadow: 10px 10px 10px #000;
+    border-radius: 20px;
+    border:3px solid #000;
+  
+}
+
+h2:hover::after {
+    content: attr(data-tooltip);
+    top: -20vh;
+    left: 40vw;  
+    position:absolute;
+    font-size: 3vh;  
+    color:#000;
+    text-shadow: none;
+    line-height: 10vh;
+    background: rgb(255, 255, 255);
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    clip-path:circle(40rem at center);
+    overflow: hidden;
+    transition: 700ms all ease-in;
+    height: 50vh;
+    width: 50vh;
+    text-align:left;
+    box-shadow: 10px 10px 10px #000;
+    border-radius: 20px;
+    border:3px solid #000;
+
+ 
+}
+
 
 
 
@@ -129,8 +183,9 @@ h3{
 
 .nav{
     display:flex;
+    position: fixed;
     width: 100vw;
-    height: 15%;
+    height: 8%;
     background-color: rgba(64, 64, 64, 0.768);
     box-shadow: 0px 20px 20px 0px #000000;
 
@@ -164,7 +219,7 @@ h3{
 
 .people{
     padding-top: 10vh;
-    height: 80vh;
+    height: 50vh;
     width: 100vw;
     display: flex;
       
@@ -172,14 +227,14 @@ h3{
 
 .people img{
     height: 50vh;
-    padding-left: 5vw;
-    padding-top: 10vh;
+    width: ;
+    box-shadow: 20px 20px 20px 10px black;
     
 }
 
 .people p{
-    text-align: left justify;
-    padding-top: 25vh;
+    text-align: justify;
+    padding-top: 20vh;
     padding-left: 5vw;
   
 }
@@ -231,13 +286,49 @@ h3{
 }
 
 
+
+.sign-up{
+    width: 100vw;
+    height: 30vh;
+    padding-top: 5vh;
+    padding-left:0vw;
+    padding-bottom: 20vh;
+    /*border: solid 2px black;*/
+    
+    
+}
+
+.sign-up p{
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 2vh;
+}
+
+.sign-up h1{
+    text-align: center;
+    font-size: 4vh;
+    color: rgb(5, 158, 185);
+}
+
+
+.sign td{
+    width: 12vw;
+    height: 10vh;
+    font-size: 3vh;
+    background-color: white;
+    
+    
+}
+
+
+
 /*---------------------------------------------------Donate-----------------------------------------------*/
 
 .space{
     width: 100vw;
     height: 50vh;
     background-color: rgba(255, 255, 255, 0);
-    border: solid 2px black;
+    /*border: solid 2px black;*/
 }
 
 .don{
@@ -257,7 +348,6 @@ table td{
     padding-right: vw;
     padding-left: 3vw;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: vh;
     text-align: justify;
     vertical-align: middle;
     /*border: solid 2px black;*/
@@ -266,22 +356,10 @@ table td{
     
 }
 
-.data-tooltip{
-    content: attr(data-tooltip);
-}
 
 td img{
     height: 10vh;
 }
-
-.td-pic:hover{
-transform: scale(2);
-transition: 300ms all ease-in;
-position:relative;
-
-
-}
-
 
 
 button{
@@ -311,4 +389,107 @@ button:hover{
 .don-img img{
     height: 50vh;
     box-shadow: 20px 20px 20px 10px black;
+}
+
+
+/*----------------------------------------------------------contact----------------------------------------------------*/
+
+.contactbody h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+    text-align: center;
+    color: rgba(0, 149, 255, 0.826);
+}
+
+.top{
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+}
+.top-img{
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+}
+
+.top-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.contactbody{
+    
+    height: 10vh;
+    width: 100vw;
+    padding-top: 10vh;
+    background-color: rgba(0, 128, 0, 0);
+}
+
+.inform{
+    display: inline-flex;
+}
+
+.info{
+    display: inline-block;
+    width: 40vw;
+    height: 50vh;
+    padding-top: 10vh;
+    padding-bottom: 50vh;
+    /*border: #000 solid 2px;*/
+    
+}
+
+.info img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    object-fit: cover;
+}
+
+.info h1{
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.info p{
+    padding-top: 1vh;
+    font-size: 2vh;
+}
+
+.bottom{
+    height: 12vh;
+    width: 90vw;
+    background-color: rgb(79, 159, 225);
+    padding-left: 10vw;
+    box-shadow: 0px -10px 30px -10px black;
+
+}
+.bottom img{
+    height:3vh;
+    padding-top: 5vh;
+}
+
+.bottom table{
+    
+    width: 80vw;
+    
+}
+
+.bottom h1{
+    color: white;
+    padding-top: 2vh;
+}
+
+.bottom a{
+    
+    padding-right: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.bottom p{
+    text-align: center;
 }
