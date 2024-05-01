@@ -1,0 +1,202 @@
+style.css
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*----------------------------------------------------------my code----------------------------------------------*/ 
+
+body{
+    
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.name{
+    text-align: center;
+    font-size: 20vh;
+    width: 100vw;
+    background-color: rgb(3, 3, 122);
+    
+    
+}
+
+h1{
+    color: white;
+    font-family: Agency FB;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 5px;
+}
+
+h2{
+    font-family: Agency FB;
+    font-size: 24px;
+}
+
+h3{
+    font-family: Agency FB;
+    font-size: 36px;
+    text-align: center;
+    
+}
+
+
+
+/*----------------------------------------------------------NAV----------------------------------------------------*/
+
+.nav{
+    display:flex;
+    width: 100vw;
+    height: 15%;
+    background-color: rgb(254, 254, 254);
+}
+
+.boxes{
+    height: 30vh;
+    width: 100vw;
+    border-bottom: solid 20px rgb(0, 0, 0);
+    text-align: center;
+    
+
+}
+
+.boxes img{
+    height: 50%;
+    padding-top: 5vh;
+    padding-bottom: 3vh;   
+}
+
+.boxes:hover{
+    background-color: rgb(60, 210, 255);
+    box-shadow: 5px 5px 100px 5px #000;
+}
+
+/*----------------------------------------------------------mod boxes---------------------------------------------------*/
+
+.opt {
+    background-color: rgb(255, 255, 255);    
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    border-bottom: solid 20px rgb(0, 0, 0);
+}
+
+.mod{
+    width: 100vw;
+    text-align: center;
+    padding-top: 3vh;
+    
+}
+
+.mod:hover{
+    background-color: blue;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.416);
+}
+
+/*----------------------------------------------------------rocket boxes---------------------------------------------------*/
+
+
+.rockmod{
+    height: 10vh;
+    width: 100vw;
+    border: 2px solid rgb(0, 0, 0);
+    padding-top: 10vh;
+}
+
+.rockmod2{
+    height: 10vh;
+    width: 100vw;
+    border: 2px solid black;
+    padding-top: 10vh;
+}
